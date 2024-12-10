@@ -3,7 +3,9 @@ import { BudgetTypes } from "../contexts/BudgetContext"
 
 const BudgetCard: FC<BudgetTypes> = ({ category, amount }) => {
     return (
-        <div className="flex flex-col h-fit text-left rounded-md border px-2 py-2 min-w-52">
+        <div
+            className="w-full max-w-sm bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500"
+        >
             <p className="text-lg font-medium">{category}</p>
             <p className="text-sm">${amount}</p>
         </div>
